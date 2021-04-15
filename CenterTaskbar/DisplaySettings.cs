@@ -68,7 +68,7 @@ namespace CenterTaskbar
         public static int CurrentRefreshRate()
         {
             var vDevMode = new DEVMODE();
-            return EnumDisplaySettings(null, ENUM_CURRENT_SETTINGS, ref vDevMode) ? vDevMode.dmDisplayFrequency : 60;
+            return EnumDisplaySettings(null, ENUM_CURRENT_SETTINGS, ref vDevMode) ? vDevMode.dmDisplayFrequency : 144;
         }
     }
 }
